@@ -2,24 +2,51 @@
      fxLayout="column"
      fxLayoutGap="10px">
 
-  <mat-list fxFlex>
-    <mat-list-item *ngFor="let item of items">
-      <img matListAvatar [src]="item.image" alt="{{item.name}}">
-      <h3 matLine><strong>{{item.name}}</strong></h3>
-      <p matLine>{{item.description}}</p>
-    </mat-list-item>
-  </mat-list>
+  <div fxFlex>
+    <div>
+      <h3>Catalogo</h3>
+      <hr>
+    </div>
+  </div>
 
-  <h1>Catalogos</h1>
-  <mat-list fxFlex> <!-- fxFlex indica que sera tratado como una pieza de contenido-->
-    <mat-list-item *ngFor="let item of items">
-      <img mat-list-avatar src={{item.image}} alt={{item.name}}>
-      <h1 mat-line> {{item.name}} </h1>
-      <p mat-line>
-        <span> {{item.description}} </span>
-      </p>
-    </mat-list-item>
-  </mat-list>
+  <div fxFlex>
+    <!--binding del dom al property del objeto
+    [propiedadDelComponente]="valorDesdeElDOM"
+    bind-propiedadDelComponente="valorDesdeElDOM"
+    -->
+    <mat-grid-list [cols]="2" bind-rowHeight="'300px'" [gutterSize]="'10px'">
+      <mat-grid-tile *ngFor="let item of items" [colspan]="1" [rowspan]="1">
+        <img height="200px" src={{item.image}} alt={{item.name}}>
+        <mat-grid-tile-footer>
+          <h1 mat-line><p>{{item.name | uppercase}}</p></h1>
+          <h3 mat-line="">SubCategory</h3>
+        </mat-grid-tile-footer>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+
+  <div fxFlex *ngIf="selectedItem">
+
+    <mat-card>
+      <mat-card-header>
+        <img matCardAvatar src="{{selectedItem.image}}">
+        <mat-card-title>
+          <h3>{{selectedItem.name | uppercase}}</h3>
+        </mat-card-title>
+
+        <mat-card-subtitle>Sub-Category</mat-card-subtitle>
+      </mat-card-header>
+      <img matCardImage src="{{selectedItem.image}}" alt="{{selectedItem.name}}">
+      <mat-card-content>
+        <p>{{selectedItem.description}}</p>
+      </mat-card-content>
+      <mat-card-actions align="start">
+        <button mat-button (click)="onAction($event)">like</button>
+        <button mat-button (click)="onAction($event)">shaped</button>
+      </mat-card-actions>
+    </mat-card>
+
+  </div>
 
 </div>
 
