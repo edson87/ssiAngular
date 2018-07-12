@@ -1,3 +1,5 @@
+
+
 <div class="container"
      fxLayout="column"
      fxLayoutGap="10px">
@@ -19,34 +21,11 @@
         <img height="200px" src={{item.image}} alt={{item.name}}>
         <mat-grid-tile-footer>
           <h1 mat-line><p>{{item.name | uppercase}}</p></h1>
-          <h3 mat-line="">SubCategory</h3>
+          <h3 mat-line>SubCategory</h3>
         </mat-grid-tile-footer>
       </mat-grid-tile>
     </mat-grid-list>
   </div>
 
-  <div fxFlex *ngIf="selectedItem">
-
-    <mat-card>
-      <mat-card-header>
-        <img matCardAvatar src="{{selectedItem.image}}">
-        <mat-card-title>
-          <h3>{{selectedItem.name | uppercase}}</h3>
-        </mat-card-title>
-
-        <mat-card-subtitle>Sub-Category</mat-card-subtitle>
-      </mat-card-header>
-      <img matCardImage src="{{selectedItem.image}}" alt="{{selectedItem.name}}">
-      <mat-card-content>
-        <p>{{selectedItem.description}}</p>
-      </mat-card-content>
-      <mat-card-actions align="start">
-        <button mat-button (click)="onAction($event)">like</button>
-        <button mat-button (click)="onAction($event)">shaped</button>
-      </mat-card-actions>
-    </mat-card>
-
-  </div>
-
 </div>
-
+<app-item-detail></app-item-detail>

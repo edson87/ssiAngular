@@ -38,9 +38,10 @@ import {
   MatTooltipModule
 } from '@angular/material';
 import { CatalogComponent } from './catalog/catalog.component';
+import { ItemDetailComponent } from './item-detail/item-detail.component';
 
 @NgModule({
-  declarations: [AppComponent, CatalogComponent],
+  declarations: [AppComponent, CatalogComponent, ItemDetailComponent],
   imports: [BrowserModule, BrowserAnimationsModule, MatAutocompleteModule, MatButtonModule, MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatChipsModule, MatDatepickerModule, MatDialogModule, MatExpansionModule, MatGridListModule, MatIconModule, MatInputModule, MatListModule, MatMenuModule, MatNativeDateModule, MatPaginatorModule, MatProgressBarModule, MatProgressSpinnerModule, MatRadioModule, MatRippleModule, MatSelectModule, MatSidenavModule, MatSliderModule, MatSlideToggleModule, MatSnackBarModule, MatSortModule, MatTableModule, MatTabsModule, MatToolbarModule, MatTooltipModule, FlexLayoutModule],
   providers: [],
   bootstrap: [AppComponent]
