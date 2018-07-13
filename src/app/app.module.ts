@@ -39,9 +39,11 @@ import {
 } from '@angular/material';
 import { CatalogComponent } from './catalog/catalog.component';
 import { ItemDetailComponent } from './item-detail/item-detail.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, CatalogComponent, ItemDetailComponent],
+  declarations: [AppComponent, CatalogComponent, ItemDetailComponent, HeaderComponent, FooterComponent],
   imports: [BrowserModule, BrowserAnimationsModule, MatAutocompleteModule, MatButtonModule, MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatChipsModule, MatDatepickerModule, MatDialogModule, MatExpansionModule, MatGridListModule, MatIconModule, MatInputModule, MatListModule, MatMenuModule, MatNativeDateModule, MatPaginatorModule, MatProgressBarModule, MatProgressSpinnerModule, MatRadioModule, MatRippleModule, MatSelectModule, MatSidenavModule, MatSliderModule, MatSlideToggleModule, MatSnackBarModule, MatSortModule, MatTableModule, MatTabsModule, MatToolbarModule, MatTooltipModule, FlexLayoutModule],
   providers: [],
   bootstrap: [AppComponent]
