@@ -17,7 +17,7 @@
     bind-propiedadDelComponente="valorDesdeElDOM"
     -->
     <mat-grid-list [cols]="2" bind-rowHeight="'300px'" [gutterSize]="'10px'">
-      <mat-grid-tile *ngFor="let item of items" [colspan]="1" [rowspan]="1">
+      <mat-grid-tile *ngFor="let item of items" [colspan]="1" [rowspan]="1" (click) = "onSelect(item)">
         <img height="200px" src={{item.image}} alt={{item.name}}>
         <mat-grid-tile-footer>
           <h1 mat-line><p>{{item.name | uppercase}}</p></h1>
@@ -28,4 +28,4 @@
   </div>
 
 </div>
-<app-item-detail></app-item-detail>
+<app-item-detail [Item]="selectedItem"></app-item-detail>
