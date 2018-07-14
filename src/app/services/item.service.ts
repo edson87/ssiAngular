@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Item} from '../shared/item';
 import {ITEMS} from '../shared/items';
 
@@ -7,9 +7,20 @@ import {ITEMS} from '../shared/items';
 })
 export class ItemService {
 
-  constructor() { }
+  constructor() {
+  }
 
   getItems(): Item[] {
     return ITEMS;
   }
+
+  getItem(id: number): Item {
+    return ITEMS.filter((item) => (item.id === id))[0];
+  }
+
+  getFeaturedItem(): Item {
+    return ITEMS.filter((item) => item.featured)[0];
+  }
+
+
 }

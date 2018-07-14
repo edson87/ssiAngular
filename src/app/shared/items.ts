@@ -2,6 +2,8 @@ import {Item} from './item';
 
 export const ITEMS: Item[] = [
   {
+    id: 0,
+    featured: true,
     name: 'Helmet',
     image: '/assets/images/helmet.jpg',
     category: 'safety',
@@ -12,36 +14,38 @@ export const ITEMS: Item[] = [
       {
         rating: 5,
         comment: 'Imagine all safety PPE in SSI!',
-        author: "Mr T",
-        date: "2012-10-16T17:57:28.556094Z"
+        author: 'Mr T',
+        date: '2012-10-16T17:57:28.556094Z'
       },
       {
         rating: 4,
-        comment: "Gives me a lot of confort, I wish I could get my mother-in-law to have it!",
-        author: "Tania Barrancos",
-        date: "2014-09-05T17:57:28.556094Z"
+        comment: 'Gives me a lot of confort, I wish I could get my mother-in-law to have it!',
+        author: 'Tania Barrancos',
+        date: '2014-09-05T17:57:28.556094Z'
       },
       {
         rating: 3,
-        comment: "Use it, just use it!",
-        author: "Michael Rodriguez",
-        date: "2015-02-13T17:57:28.556094Z"
+        comment: 'Use it, just use it!',
+        author: 'Michael Rodriguez',
+        date: '2015-02-13T17:57:28.556094Z'
       },
       {
         rating: 4,
-        comment: "Ultimate, Reaching for the stars!",
-        author: "Diana Cardozo",
-        date: "2013-12-02T17:57:28.556094Z"
+        comment: 'Ultimate, Reaching for the stars!',
+        author: 'Diana Cardozo',
+        date: '2013-12-02T17:57:28.556094Z'
       },
       {
         rating: 2,
-        comment: "It is simply very nice!",
-        author: "50 Cent",
-        date: "2011-12-02T17:57:28.556094Z"
+        comment: 'It is simply very nice!',
+        author: '50 Cent',
+        date: '2011-12-02T17:57:28.556094Z'
       }
     ]
   },
   {
+    id: 1,
+    featured: false,
     name: 'Audio protector',
     image: '/assets/images/audio.jpg',
     category: 'safety',
@@ -51,37 +55,39 @@ export const ITEMS: Item[] = [
     comments: [
       {
         rating: 5,
-        comment: "Imagine all safety PPE in SSI!",
-        author: "Mr T",
-        date: "2012-10-16T17:57:28.556094Z"
+        comment: 'Imagine all safety PPE in SSI!',
+        author: 'Mr T',
+        date: '2012-10-16T17:57:28.556094Z'
       },
       {
         rating: 5,
-        comment: "Gives me a lot of confort, I wish I could get my mother-in-law to have it!",
-        author: "Tania Barrancos",
-        date: "2014-09-05T17:57:28.556094Z"
+        comment: 'Gives me a lot of confort, I wish I could get my mother-in-law to have it!',
+        author: 'Tania Barrancos',
+        date: '2014-09-05T17:57:28.556094Z'
       },
       {
         rating: 3,
-        comment: "Use it, just use it!",
-        author: "Michael Rodriguez",
-        date: "2015-02-13T17:57:28.556094Z"
+        comment: 'Use it, just use it!',
+        author: 'Michael Rodriguez',
+        date: '2015-02-13T17:57:28.556094Z'
       },
       {
         rating: 4,
-        comment: "Ultimate, Reaching for the stars!",
-        author: "Diana Cardozo",
-        date: "2013-12-02T17:57:28.556094Z"
+        comment: 'Ultimate, Reaching for the stars!',
+        author: 'Diana Cardozo',
+        date: '2013-12-02T17:57:28.556094Z'
       },
       {
         rating: 2,
-        comment: "It is simply very nice!",
-        author: "50 Cent",
-        date: "2011-12-02T17:57:28.556094Z"
+        comment: 'It is simply very nice!',
+        author: '50 Cent',
+        date: '2011-12-02T17:57:28.556094Z'
       }
     ]
   },
   {
+    id: 2,
+    featured: true,
     name: 'Glasses',
     image: '/assets/images/glasses.jpg',
     category: 'safety',
@@ -91,37 +97,39 @@ export const ITEMS: Item[] = [
     comments: [
       {
         rating: 5,
-        comment: "Imagine all safety PPE in SSI!",
-        author: "Mr T",
-        date: "2012-10-16T17:57:28.556094Z"
+        comment: 'Imagine all safety PPE in SSI!',
+        author: 'Mr T',
+        date: '2012-10-16T17:57:28.556094Z'
       },
       {
         rating: 5,
-        comment: "Gives me a lot of confort, I wish I could get my mother-in-law to have it!",
-        author: "Tania Barrancos",
-        date: "2014-09-05T17:57:28.556094Z"
+        comment: 'Gives me a lot of confort, I wish I could get my mother-in-law to have it!',
+        author: 'Tania Barrancos',
+        date: '2014-09-05T17:57:28.556094Z'
       },
       {
         rating: 3,
-        comment: "Use it, just use it!",
-        author: "Michael Rodriguez",
-        date: "2015-02-13T17:57:28.556094Z"
+        comment: 'Use it, just use it!',
+        author: 'Michael Rodriguez',
+        date: '2015-02-13T17:57:28.556094Z'
       },
       {
         rating: 4,
-        comment: "Ultimate, Reaching for the stars!",
-        author: "Diana Cardozo",
-        date: "2013-12-02T17:57:28.556094Z"
+        comment: 'Ultimate, Reaching for the stars!',
+        author: 'Diana Cardozo',
+        date: '2013-12-02T17:57:28.556094Z'
       },
       {
         rating: 2,
-        comment: "It is simply very nice!",
-        author: "50 Cent",
-        date: "2011-12-02T17:57:28.556094Z"
+        comment: 'It is simply very nice!',
+        author: '50 Cent',
+        date: '2011-12-02T17:57:28.556094Z'
       }
     ]
   },
   {
+    id: 3,
+    featured: true,
     name: 'Gloves',
     image: '/assets/images/gloves.jpg',
     category: 'safety',
@@ -131,33 +139,33 @@ export const ITEMS: Item[] = [
     comments: [
       {
         rating: 5,
-        comment: "Imagine all safety PPE in SSI!",
-        author: "Mr T",
-        date: "2012-10-16T17:57:28.556094Z"
+        comment: 'Imagine all safety PPE in SSI!',
+        author: 'Mr T',
+        date: '2012-10-16T17:57:28.556094Z'
       },
       {
         rating: 5,
-        comment: "Gives me a lot of confort, I wish I could get my mother-in-law to have it!",
-        author: "Tania Barrancos",
-        date: "2014-09-05T17:57:28.556094Z"
+        comment: 'Gives me a lot of confort, I wish I could get my mother-in-law to have it!',
+        author: 'Tania Barrancos',
+        date: '2014-09-05T17:57:28.556094Z'
       },
       {
         rating: 3,
-        comment: "Use it, just use it!",
-        author: "Michael Rodriguez",
-        date: "2015-02-13T17:57:28.556094Z"
+        comment: 'Use it, just use it!',
+        author: 'Michael Rodriguez',
+        date: '2015-02-13T17:57:28.556094Z'
       },
       {
         rating: 4,
-        comment: "Ultimate, Reaching for the stars!",
-        author: "Diana Cardozo",
-        date: "2013-12-02T17:57:28.556094Z"
+        comment: 'Ultimate, Reaching for the stars!',
+        author: 'Diana Cardozo',
+        date: '2013-12-02T17:57:28.556094Z'
       },
       {
         rating: 2,
-        comment: "It is simply very nice!",
-        author: "50 Cent",
-        date: "2011-12-02T17:57:28.556094Z"
+        comment: 'It is simply very nice!',
+        author: '50 Cent',
+        date: '2011-12-02T17:57:28.556094Z'
       }
     ]
   }

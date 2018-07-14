@@ -41,10 +41,14 @@ import { CatalogComponent } from './catalog/catalog.component';
 import { ItemDetailComponent } from './item-detail/item-detail.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
+import {AppRoutingModule} from './app-routing/app-routing.module';
 
 @NgModule({
-  declarations: [AppComponent, CatalogComponent, ItemDetailComponent, HeaderComponent, FooterComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, MatAutocompleteModule, MatButtonModule, MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatChipsModule, MatDatepickerModule, MatDialogModule, MatExpansionModule, MatGridListModule, MatIconModule, MatInputModule, MatListModule, MatMenuModule, MatNativeDateModule, MatPaginatorModule, MatProgressBarModule, MatProgressSpinnerModule, MatRadioModule, MatRippleModule, MatSelectModule, MatSidenavModule, MatSliderModule, MatSlideToggleModule, MatSnackBarModule, MatSortModule, MatTableModule, MatTabsModule, MatToolbarModule, MatTooltipModule, FlexLayoutModule],
+  declarations: [AppComponent, CatalogComponent, ItemDetailComponent, HeaderComponent, FooterComponent, AboutComponent, HomeComponent, ContactComponent],
+  imports: [BrowserModule, BrowserAnimationsModule, MatAutocompleteModule, MatButtonModule, MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatChipsModule, MatDatepickerModule, MatDialogModule, MatExpansionModule, MatGridListModule, MatIconModule, MatInputModule, MatListModule, MatMenuModule, MatNativeDateModule, MatPaginatorModule, MatProgressBarModule, MatProgressSpinnerModule, MatRadioModule, MatRippleModule, MatSelectModule, MatSidenavModule, MatSliderModule, MatSlideToggleModule, MatSnackBarModule, MatSortModule, MatTableModule, MatTabsModule, MatToolbarModule, MatTooltipModule, FlexLayoutModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
