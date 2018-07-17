@@ -59,17 +59,32 @@
   </div>
 
 
+  <mat-list>
+    <h3 mat-subheader>Folders</h3>
+    <mat-list-item *ngFor="let folder of folders">
+      <mat-icon mat-list-icon>folder</mat-icon>
+      <h4 mat-line>{{folder.name}}</h4>
+      <p mat-line> {{folder.updated | date}} </p>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <h3 mat-subheader>Notes</h3>
+    <mat-list-item *ngFor="let note of notes">
+      <mat-icon mat-list-icon>note</mat-icon>
+      <h4 mat-line>{{note.name}}</h4>
+      <p mat-line> {{note.updated | date}} </p>
+    </mat-list-item>
+  </mat-list>
+
+
   <div fxFlex>
-    <h2>Employees </h2>
     <mat-list dense>
+      <h2>Employees </h2>
       <mat-list-item *ngFor="let employee of employees">
         <img matListAvatar="" src="{{employee.image}}" alt="avatar">
-        <mat-list dense>
-          <mat-list-item>{{employee.name}}</mat-list-item>
-          <mat-list-item>{{employee.id}}</mat-list-item>
-          <mat-list-item>{{employee.jobPosition}}</mat-list-item>
-          <mat-list-item>{{employee.featured}}</mat-list-item>
-        </mat-list>
+          <span mat-line>{{employee.name}}</span>
+          <span mat-line>{{employee.id}}</span>
+          <span mat-line>{{employee.jobPosition}}</span>
+          <span mat-line>{{employee.featured}}</span>
       </mat-list-item>
     </mat-list>
 

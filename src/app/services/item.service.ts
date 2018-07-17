@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Item} from '../shared/item';
 import {ITEMS} from '../shared/items';
+import {promise} from 'selenium-webdriver';
 
 @Injectable({
   providedIn: 'root'
@@ -10,16 +11,16 @@ export class ItemService {
   constructor() {
   }
 
-  getItems(): Item[] {
-    return ITEMS;
+  getItems(): Promise<Item[]> {
+    return Promise.resolve(ITEMS);
   }
 
-  getItem(id: number): Item {
-    return ITEMS.filter((item) => (item.id === id))[0];
+  getItem(id: number): Promise<Item> {
+    return Promise.resolve(ITEMS.filter((item) => (item.id === id))[0]);
   }
 
-  getFeaturedItem(): Item {
-    return ITEMS.filter((item) => item.featured)[0];
+  getFeaturedItem(): Promise<Item> {
+    return Promise.resolve(ITEMS.filter((item) => item.featured)[0]);
   }
 
 

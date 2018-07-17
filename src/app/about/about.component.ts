@@ -13,7 +13,7 @@ export class AboutComponent implements OnInit {
   constructor(private serviceEmployee: EmployeeService) { }
 
   ngOnInit() {
-    this.employees = this.serviceEmployee.getEmployees();
+    this.serviceEmployee.getEmployees().then(employees => this.employees = employees );
   }
 
 }
