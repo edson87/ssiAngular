@@ -34,6 +34,19 @@ export class ContactComponent implements OnInit {
   onSubmit() {
     this.feedback = this.feedbackForm.value;
     console.log(this.feedback);
-    this.feedbackForm.reset();
+    this.feedbackForm.reset({
+        firstname: '',
+        lastname: '',
+        telnum: '',
+        email: '',
+        agree: false,
+        contacttype: 'None',
+        message: ''
+      }
+    );
+    const form: HTMLFormElement =
+      <HTMLFormElement>document.getElementById('form');
+    form.reset();
+
   }
 }
